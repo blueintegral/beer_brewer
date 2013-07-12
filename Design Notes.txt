@@ -1,0 +1,16 @@
+Design Notes
+------------
+
+Board is powered from +12V DC from the Power_In header pins. The power supply must be able to provide at least 10 A. 
+
+Get a preflashed Atmega32U4 here:
+http://www.ebay.com/itm/New-Atmega32U4-With-Arduino-Leonardo-Bootloader-/190864202730?pt=LH_DefaultDomain_0&hash=item2c70649bea
+
+The 40mm fan is 12v, 0.6 A. 
+TEC is 12v, 9 A.
+The temperature sensor suggested can't be submerged, replace with this sensor:
+https://www.adafruit.com/products/381
+
+Relay is Normally Open, so it will turn on the TEC when it is energized. It's rated for 10A, and max current it should see is 9 A. 
+
+When you program this, make sure Arduino Leonardo is selected in the Arduino IDE.
